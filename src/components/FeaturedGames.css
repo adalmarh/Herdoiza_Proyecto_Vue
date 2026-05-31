@@ -1,0 +1,85 @@
+.featured {
+  padding: 80px 0;
+  background: #0f0f14;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.game-card {
+  background: #1a1a24;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.featured-card {
+  background: linear-gradient(135deg, #1a1a24, #1e1e2a);
+  border: 1px solid rgba(255,107,107,0.3);
+}
+
+.game-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ff4757;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.game-emoji {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.game-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.rating {
+  margin-bottom: 15px;
+}
+
+.price {
+  margin-bottom: 20px;
+}
+
+.current {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4ecdc4;
+  margin-right: 10px;
+}
+
+.original {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.buy-btn {
+  background: linear-gradient(135deg, #ff6b6b, #ff4757);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.buy-btn:hover {
+  transform: scale(1.05);
+}
