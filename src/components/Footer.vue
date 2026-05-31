@@ -1,0 +1,73 @@
+<template>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>🎮 PixelStore</h3>
+          <p>Tu tienda de videojuegos favorita</p>
+        </div>
+        <div class="footer-section">
+          <h4>Enlaces rápidos</h4>
+          <a href="#home">Inicio</a>
+          <a href="#featured">Destacados</a>
+          <a href="#games">Catálogo</a>
+        </div>
+        <div class="footer-section">
+          <h4>Síguenos</h4>
+          <div class="social-links">📘 🐦 📷</div>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2025 PixelStore - Todos los derechos reservados</p>
+    </div>
+  </footer>
+</template>
+
+<script>
+export default {
+  name: 'Footer'
+}
+</script>
+
+<style scoped>
+.footer {
+  background: #0a0a0a;
+  padding: 50px 0 20px;
+  border-top: 1px solid rgba(255,107,107,0.3);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+}
+
+.footer-section a {
+  display: block;
+  color: #aaa;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #ff6b6b;
+}
+
+.social-links {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #666;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+</style>

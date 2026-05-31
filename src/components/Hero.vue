@@ -1,0 +1,120 @@
+<template>
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Hasta -40% en juegos AAA</h1>
+      <p>Las mejores ofertas en PC, PlayStation, Xbox y Nintendo Switch</p>
+      <div class="hero-buttons">
+        <button class="btn-primary">Ver ofertas 🔥</button>
+        <button class="btn-secondary">Explorar catálogo 🎮</button>
+      </div>
+      <div class="hero-stats">
+        <span>✓ 5000+ juegos</span>
+        <span>✓ Envío digital inmediato</span>
+        <span>✓ 24/7 Soporte</span>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: 'Hero'
+}
+</script>
+
+<style scoped>
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+  margin-top: 60px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(255,107,107,0.1), transparent);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff6b6b, #ff4757);
+  color: white;
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid #ff6b6b;
+  color: #ff6b6b;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255,107,107,0.3);
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+</style>
